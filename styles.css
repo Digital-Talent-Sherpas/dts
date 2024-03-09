@@ -1,0 +1,396 @@
+:root {
+    --main-background: #143558;
+    --main-font-color: #94A3B8;
+    --main-white-color: #E2E8F0;
+    --dark-font-color: #143558;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media (max-width: 800px) {
+    html {
+      font-size: 90%;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    html {
+      font-size: 80%;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  
+  body {
+    background-color: var(--main-background);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--main-font-color);
+    line-height: 1.4;
+  }
+
+  .page-wrapper {
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  h1, h2 {
+    font-weight: 400;
+    color: var(--main-white-color);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3.2rem;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .nav-link {
+    color: var(--main-font-color);
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+  }
+
+  .nav-link:hover {
+    color: var(--main-white-color);
+    transition: 0.4s;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #143558;
+    z-index: 9999;
+  }
+
+  .logo {
+    width: 60vw;
+  }
+
+  .logo > img {
+    height: 100%;
+    max-width: 90px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .grid {
+    display: flex;
+  }
+  
+  @media (max-width: 450px) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+  
+  .nav-list a {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--main-font-color);
+    margin: 1.2rem;
+    transition: color 0.2s ease-out;
+  }
+  
+  .nav-list a:hover {
+    color: var(--main-white-color);
+    transition: 0.4s;
+  }
+  
+  .welcome-section {
+    position: relative;
+  }
+
+  .welcome-section > img {
+    width: 100%;
+  }
+
+  .welcome-section > h1 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    text-align: left;
+    padding: 20px 20px 20px 100px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+  }
+  
+  .welcome-section > p {
+    margin: 1.8rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+
+  .sherpa-section {
+    margin: 300px auto;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+  }
+
+  .sherpa-section > h2 {
+    margin: 30px;
+  }
+
+  .sherpa-section > p {
+    font-size: 1.6rem;
+    padding: 20px 120px;
+    line-height: 1.5;
+  }
+
+  .placements-section {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    margin: 300px auto;
+  }
+
+  .placements-section > h2, h1 {
+    padding: 50px;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  .fadeInUp-animation {
+    animation: 1.5s fadeInUp;
+  }
+  
+  marquee {
+    font-size: 2rem;
+  }
+  
+  .team-section {
+    font-family: Georgia, Times, "Times New Roman", serif;
+  }
+
+  #services {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 20px 10px;
+    max-width: 1060px;
+    margin: 0 auto 40px;
+  }
+
+  #services > h2 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: var(--dark-font-color);
+    margin: 0px auto;
+  }
+  
+@media (max-width: 1060px) {
+  #services {
+    border-radius: 0;
+  }
+}
+
+.services {
+  flex-direction: row;
+  justify-content: center;
+}
+  
+.service {
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 450px;
+  height: 850px;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+}
+  
+@media (max-width: 748px) {
+  .services {
+    flex-direction: column;
+    width: 100%;
+  }
+  .service {
+    width: 300px;
+    margin: 0 auto 20px;
+  }
+}
+  
+.level {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2em;
+  color: var(--dark-font-color);
+  margin: 20px 5px;
+}
+  
+.service > .desc {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1em;
+  line-height: 1.3;
+  padding: 0 20px;
+}
+  
+.service h2 {
+  position: absolute;
+  bottom: 60px;
+}
+
+.btn {
+  padding: 10px 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 400;
+  border: 2px #000000 solid;
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--main-background);
+  color: #ffffff;
+  transition: 0.15s;
+  border: 2px var(--main-background) solid;
+}
+  
+.service > .btn {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+/*.future-section {
+  background-image: url(images/future-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+}*/
+
+.future-section {
+  position: relative;
+}
+
+.future-text {
+  position: absolute;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  text-align: left;
+  max-width: 900px;
+  top: 120px;
+  padding-left: 20px;
+}
+
+.future-text > h2 {
+  padding: 20px;
+  text-align: left;
+  flex-direction: column;
+}
+
+.future-text > p {
+  padding: 20px;
+}
+
+.team-section {
+  background-color: #ffffff;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: var(--dark-font-color);
+}
+
+.header-text {
+  font-size: 3rem;
+  color: var(--dark-font-color);
+  text-align: left;
+  padding: 50px 0 0 50px;
+  flex-direction: column;
+}
+
+.header-text > h2 {
+  font-size: 3rem;
+  color: var(--dark-font-color);
+  text-align: left;
+  padding: 50px 0 0 50px;
+}
+
+.team-container {
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: space-around;
+}
+
+.member {
+  align-items: center;
+  max-width: 350px;
+  margin: 20px;
+}
+
+.member-pic > img {
+  vertical-align: middle;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.member-text {
+  text-align: center;
+}
+
+.name {
+  font-weight: 600;
+}
