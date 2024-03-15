@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Talent Sherpas</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
   </head>
   <body>
     <div class="page-wrapper">
       <header id="header" class="grid">
         <div class="logo grid">
-          <img id="header-img" src="images/dts_logo.png">
+          <img id="header-img" src="images/dts_logo_gray.png">
         </div>
         <nav id="nav-bar">
           <ul>
@@ -65,7 +68,7 @@
 
       <div id="services">
         <h2>
-          What We Do, Now…
+          What We Do, Now&hellip;
         </h2>
         <div class="services grid">
           <div class="service grid">
@@ -88,7 +91,7 @@
             <img src="images/workshops.png">
             <p class="level">Workshops</p>
             <p class="desc">
-              Dear CEOs, Hiring Managers, and TA Managers. Are you tired of the endless struggle to retain top talent in your organization? Do you wish there was a proven method to consistently source the best candidate, saving both timerecru and resources?  Look no further. Our exclusive workshop for inside recruiters and hiring managers is designed to equip your team with the skills and strategies needed to recruit with unparalleled success. With a track record boasting a 99.111% success rate in souring the top 10% of talent, our workshop offers invaluable insights and techniques that revolutionize your recrutment process. Don’t miss the opportunity to empower your team and stay ahead of the competition.<br><br>Join us in the beta phase offering and unlock the secrets of recruiting excellence before it is too late!
+              Dear CEOs, Hiring Managers, and TA Managers. Are you tired of the endless struggle to retain top talent in your organization? Do you wish there was a proven method to consistently source the best candidate, saving both timerecru and resources?  Look no further. Our exclusive workshop for inside recruiters and hiring managers is designed to equip your team with the skills and strategies needed to recruit with unparalleled success. With a track record boasting a 99.111% success rate in souring the top 10% of talent, our workshop offers invaluable insights and techniques that revolutionize your recrutment process. Don&rsquo;t miss the opportunity to empower your team and stay ahead of the competition.<br><br>Join us in the beta phase offering and unlock the secrets of recruiting excellence before it is too late!
             </p>
             <button class="btn">PRE-REGISTER</button>
           </div>
@@ -97,9 +100,9 @@
       <div class="future-section">
         <img src="images/future-bg.png" alt="future-bg">
         <div class="future-text">
-          <h2>Building For The Future Now<br>That’s what We Do…</h2>
+          <h2>Building For The Future Now<br>That&rsquo;s what We Do…</h2>
           <p>
-            Step into a world where the traditional barriers between candidates, recruiters, and hiring managers dissolve into thin air. Picture a realm where candidates are nurtured with the utmost care and empowered with real-time insights into their application journey, rendering the phenomenon of ‘ghosting’ obsolete. We are crafting an AI-powered marvel - a digital magic wand poised to revolutionize the realm of recruitment. <u>Avatar K0nct</u> is not just a tool; it’s a visionary force set to enhance and elevate our recruiting endeavors with unprecedented speed and precision. Imagine harnessing the power of an omnipresent, omniscient, and omnipotent digital ally at your fingertips. If you are ready to embark on this transformative journey with us, join our Beta phase and be a part of shaping the future of recruitment. Reach out to us today to reserve your spot in the revolution.<br><br>Avatar K0nct<br>We Don’t Ghost, We K0nct
+            Step into a world where the traditional barriers between candidates, recruiters, and hiring managers dissolve into thin air. Picture a realm where candidates are nurtured with the utmost care and empowered with real-time insights into their application journey, rendering the phenomenon of &ldquo;ghosting&rdquo; obsolete. We are crafting an AI-powered marvel - a digital magic wand poised to revolutionize the realm of recruitment. <u>Avatar K0nct</u> is not just a tool; it&rsquo;s a visionary force set to enhance and elevate our recruiting endeavors with unprecedented speed and precision. Imagine harnessing the power of an omnipresent, omniscient, and omnipotent digital ally at your fingertips. If you are ready to embark on this transformative journey with us, join our Beta phase and be a part of shaping the future of recruitment. Reach out to us today to reserve your spot in the revolution.<br><br>Avatar K0nct<br>We Don&rsquo;t Ghost, We K0nct
           </p>
         </div>
       </div>
@@ -161,29 +164,6 @@
   
       <!-- CONTACT SECTION END -->
     </div>
-    <script>
-      // Create the observer
-      const observer = new IntersectionObserver(entries => {
-        // Loop over the entries
-        entries.forEach(entry => {
-          //const viewWorkText = entry.target.querySelector('.view-work-text');
-          // If the element is visible
-          
-          if (entry.isIntersecting) {
-            // Add animation class
-            //viewWorkText.classList.add('fadeInUp-animation');
-            entry.target.classList.add('fadeInUp-animation');
-            return; // if we added the class, exit function
-          }
-
-          // We're not intersecting, so remove class
-          //viewWorkText.classList.remove('fadeInUp-animation');
-          entry.target.classList.remove('fadeInUp-animation');
-        });
-      });
-
-      // Tell the observer which elements to track
-      observer.observe(document.querySelector('.view-work-text'));
-    </script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
