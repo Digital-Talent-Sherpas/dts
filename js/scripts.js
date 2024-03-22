@@ -3,6 +3,8 @@ const observer = new IntersectionObserver(entries => {
   // Loop over the entries
   entries.forEach(entry => {
     //const viewWorkText = entry.target.querySelector('.view-work-text');
+    //console.log(viewWorkText);
+    //console.log(entry.target);
     // If the element is visible
       
     if (entry.isIntersecting) {
