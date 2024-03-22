@@ -196,7 +196,7 @@
       max-width: 100px;
     }
 
-    .welcome-section h1 {
+    .name-logo-block > h1 {
       font-size: 2.4rem;
     }
   }
