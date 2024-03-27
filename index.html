@@ -83,7 +83,7 @@
             <p class="desc">
               Our Sherpas are dedicated to providing you with personalized guidance, leveraging their extensive networks and resources to seamlessly navigate the realms of your chosen industry, bringing your career goals to fruition. Our Sherpas will be by your side from day one to your start date.
             </p>
-            <button class="btn">MAKE A CAREER MOVE</button>
+            <button id="btn1" class="btn">MAKE A CAREER MOVE</button>
           </div>
           <div class="service grid">
             <img src="images/for-our-clients.png">
@@ -91,7 +91,7 @@
             <p class="desc">
               Our Sherpas source, screen and, assess the top 10% of candidates. We build relationships with clients and candidates to make sure they are the perfect fit for your company working with you through the whole hiring process to make sure it is a success.  We owe the success to our timing sequence. We pride ourselves in believing in a transparent and engaging recruiting and hiring process.
             </p>
-            <button class="btn">BOOK AN APPOINTMENT</button>
+            <button id="btn2" class="btn">BOOK AN APPOINTMENT</button>
           </div>
           <div class="service grid">
             <img src="images/workshops.png">
@@ -99,7 +99,7 @@
             <p class="desc">
               Dear CEOs, Hiring Managers, and TA Managers. Are you tired of the endless struggle to retain top talent in your organization? Do you wish there was a proven method to consistently source the best candidate, saving both timerecru and resources?  Look no further. Our exclusive workshop for inside recruiters and hiring managers is designed to equip your team with the skills and strategies needed to recruit with unparalleled success. With a track record boasting a 99.111% success rate in souring the top 10% of talent, our workshop offers invaluable insights and techniques that revolutionize your recrutment process. Don&rsquo;t miss the opportunity to empower your team and stay ahead of the competition.<br><br>Join us in the beta phase offering and unlock the secrets of recruiting excellence before it is too late!
             </p>
-            <button class="btn">PRE-REGISTER</button>
+            <button id="btn3" class="btn">PRE-REGISTER</button>
           </div>
         </div>
       </div>
@@ -195,7 +195,31 @@
   
       <!-- CONTACT SECTION BEGIN -->
   
-      <div id="contact-section" class="contact-section">
+      <div class="popup-overlay" id="popupOverlay">
+        <div class="popup" id="popup">
+          <span class="close" id="closePopup">&times;</span>
+          <div class="popup-content">
+            <label for="first-name">
+              First Name <input id="first-name" name="first-name" type="text" placeholder="Required" required />
+            </label>
+            <label for="last-name">
+              Last Name <input id="last-name" name="last-name" type="text" placeholder="Required" required />
+            </label>
+            <label for="company">
+              Company <input id="company" name="company" type="text" />
+            </label>
+            <label for="title">
+              Title <input id="title" name="title" type="text" />
+            </label>
+            <label for="phone">
+              Phone <input id="phone" name="phone" type="text" />
+            </label>
+            <label for="email">
+              Email <input id="email" name="email" type="email" placeholder="Required" required />
+            </label>
+            <button class="btn" onclick="submitForm()">SEND</button>
+          </div>
+        </div>
       </div>
   
       <!-- CONTACT SECTION END -->
