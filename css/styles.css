@@ -393,7 +393,7 @@
   bottom: 60px;
 }
 
-.btn, .popup-content > .btn {
+.btn, .popup-content .btn {
   padding: 10px 20px;
   height: 40px;
   font-size: 1em;
