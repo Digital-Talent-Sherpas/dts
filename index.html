@@ -199,7 +199,7 @@
         <div class="popup" id="popup">
           <span class="close" id="closePopup">&times;</span>
           <div class="popup-content">
-            <form action="send_email.php" method="post">
+            <form id="dts-form" action="send_email.php" method="post">
               <label for="first-name">
                 First Name <input id="first-name" name="first-name" type="text" placeholder="Required" required />
               </label>
@@ -213,12 +213,12 @@
                 Title <input id="title" name="title" type="text" />
               </label>
               <label for="phone">
-                Phone <input id="phone" name="phone" type="text" />
+                Phone <input id="phone" name="phone" type="tel" />
               </label>
               <label for="email">
                 Email <input id="email" name="email" type="email" placeholder="Required" required />
               </label>
-              <button class="btn" onclick="submitForm()">SEND</button>
+              <button id="dts-submit-btn" class="btn">SEND</button>
             </form>
           </div>
         </div>
