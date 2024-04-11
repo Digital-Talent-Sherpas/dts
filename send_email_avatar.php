@@ -8,7 +8,7 @@ require "vendor/autoload.php";
 $errors = [];
 $errorMessage = ' ';
 $successMessage = ' ';
-echo "sending ...";
+//echo "sending ...";
 if (!empty($_POST)) {
     $fname = $_POST["first-name"];
     $lname = $_POST["last-name"];
