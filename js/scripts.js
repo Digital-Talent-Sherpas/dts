@@ -27,10 +27,15 @@ observer.observe(document.querySelector(".view-work-text"));
 
 /***** Pop Up Contact Window *****/
 
+/***** Register Buttons *****/
 const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementById("btn3");
+const futureBtn = document.getElementById("future-btn");
+
+/***** Form Submit Buttons *****/
 const dtsSubmitBtn = document.getElementById("dts-submit-btn");
+const avatarSubmitBtn = document.getElementById("avatar-submit-btn");
 
 function loadContactPopUp() {
   const popupOverlay = document.getElementById("popupOverlay");
@@ -73,10 +78,56 @@ function loadContactPopUp() {
   });
 }
 
+function loadContactPopUpAvatar() {
+  const popupOverlay = document.getElementById("popupOverlay-avatar");
+  const popup = document.getElementById("popup");
+  const closePopup = document.getElementById("closePopup");
+  const emailInput = document.getElementById("emailInput");
+
+  // Function to open the popup
+  function openPopup() {
+    popupOverlay.style.display = "block";
+  }
+
+  // Function to close the popup
+  function closePopupFunc() {
+    popupOverlay.style.display = "none";
+  }
+
+  // Function to submit the signup form
+  /*function submitForm() {
+    const email = emailInput.value;
+
+    // Add your form submission logic here
+    console.log(`Email submitted: ${email}`);
+    closePopupFunc(); // Close the popup after form submission
+  }*/
+
+  // Event listeners
+
+  // Trigger the popup to open (you can call this function on a button click or any other event)
+  openPopup();
+
+  // Close the popup when the close button is clicked
+  closePopup.addEventListener("click", closePopupFunc);
+
+  // Close the popup when clicking outside the popup content
+  popupOverlay.addEventListener("click", function (event) {
+    if (event.target === popupOverlay) {
+      closePopupFunc();
+    }
+  });
+}
+
 btn1.addEventListener("click", loadContactPopUp);
 btn2.addEventListener("click", loadContactPopUp);
 btn3.addEventListener("click", loadContactPopUp);
+futureBtn.addEventListener("click", loadContactPopUpAvatar);
 
 dtsSubmitBtn.addEventListener("click", function() {
   document.getElementById("dts-form").submit();
+});
+
+avatarSubmitBtn.addEventListener("click", function() {
+  document.getElementById("avatar-form").submit();
 });

@@ -11,11 +11,14 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header id="header" class="grid">
-        <div class="logo grid">
-          <img id="header-img" src="images/dts_logo_gray.png">
-        </div>
-        <nav id="nav-bar">
+      
+      <!-- NAV BEGIN-->
+
+      <nav>
+        <div class="nav-bar grid">
+          <div class="logo grid">
+            <img id="nav-img" src="images/dts_logo_gray.png">
+          </div>
           <ul>
             <li>
               <a class="nav-link" href="#sherpa-section">About</a>
@@ -30,8 +33,8 @@
               <a class="nav-link" href="#contact-section">Contact</a>
             </li>
           </ul>
-        </nav>
-      </header>
+        </div>
+      </nav>
   
       <!-- NAV END -->
   
@@ -103,6 +106,11 @@
           </div>
         </div>
       </div>
+
+      <!-- SERVICES SECTION END -->
+
+      <!-- FUTURE SECTION BEGIN -->
+
       <div class="future-section">
         <img src="images/future-bg.png" alt="future-bg">
         <div class="future-text">
@@ -110,10 +118,11 @@
           <p>
             Step into a world where the traditional barriers between candidates, recruiters, and hiring managers dissolve into thin air. Picture a realm where candidates are nurtured with the utmost care and empowered with real-time insights into their application journey, rendering the phenomenon of &ldquo;ghosting&rdquo; obsolete. We are crafting an AI-powered marvel - a digital magic wand poised to revolutionize the realm of recruitment. <u>Avatar K0nct</u> is not just a tool; it&rsquo;s a visionary force set to enhance and elevate our recruiting endeavors with unprecedented speed and precision. Imagine harnessing the power of an omnipresent, omniscient, and omnipotent digital ally at your fingertips. If you are ready to embark on this transformative journey with us, join our Beta phase and be a part of shaping the future of recruitment. Reach out to us today to reserve your spot in the revolution.<br><br>Avatar K0nct<br>We Don&rsquo;t Ghost, We K0nct
           </p>
+          <button id="future-btn" class="future-btn">REGISTER EARLY</button>
         </div>
       </div>
 
-      <!-- SERVICES SECTION END -->
+      <!-- FUTURE SECTION END -->
   
       <!-- TEAM SECTION BEGIN -->
   
@@ -167,33 +176,36 @@
 
       <!-- CLIENTS SECTION BEGIN -->
 
-      <div id="clients-section" class="clients-section grid">
-        <div class="client">
-          <img src="images/clients/amwins-logo.png" alt="amwins-logo">
-        </div>
-        <div class="client">
-          <img src="images/clients/crc-logo.png" alt="crc-logo">
-        </div>
-        <div class="client">
-          <img src="images/clients/rt-logo.png" alt="rt-logo">
-        </div>
-        <div class="client">
-          <img src="images/clients/marsh-logo.png" alt="marsh-logo">
-        </div>
-        <div class="client">
-          <img src="images/clients/aon-logo.png" alt="aon-logo">
-        </div>
-        <div class="client">
-          <img src="images/clients/xpt-logo.png" alt="xpt-logo">
-        </div>
-        <div class="client">
-          <img src="images/clients/brown-riding-logo.png" alt="brown-riding-logo">
-        </div>
+      <div id="clients-section">
+        <h2>Featured Clients</h2>
+        <div class="clients-section grid">
+          <div class="client">
+            <img src="images/clients/amwins-logo.png" alt="amwins-logo">
+          </div>
+          <div class="client">
+            <img src="images/clients/crc-logo.png" alt="crc-logo">
+          </div>
+          <div class="client">
+            <img src="images/clients/rt-logo.png" alt="rt-logo">
+          </div>
+          <div class="client">
+            <img src="images/clients/marsh-logo.png" alt="marsh-logo">
+          </div>
+          <div class="client">
+            <img src="images/clients/aon-logo.png" alt="aon-logo">
+          </div>
+          <div class="client">
+            <img src="images/clients/xpt-logo.png" alt="xpt-logo">
+          </div>
+          <div class="client">
+            <img src="images/clients/brown-riding-logo.png" alt="brown-riding-logo">
+          </div>
+        </div>  
       </div>
 
       <!-- CLIENTS SECTION END -->
   
-      <!-- CONTACT SECTION BEGIN -->
+      <!-- DTS CONTACT SECTION BEGIN -->
   
       <div class="popup-overlay" id="popupOverlay">
         <div class="popup" id="popup">
@@ -224,7 +236,41 @@
         </div>
       </div>
   
-      <!-- CONTACT SECTION END -->
+      <!-- DTS CONTACT SECTION END -->
+
+      <!-- AVATAR K0NCT CONTACT SECTION BEGIN-->
+
+      <div class="popup-overlay" id="popupOverlay-avatar">
+        <div class="popup" id="popup">
+          <span class="close" id="closePopup">&times;</span>
+          <div class="popup-content">
+            <form id="avatar-form" action="send_email_avatar.php" method="post">
+              <label for="first-name">
+                First Name <input id="first-name" name="first-name" type="text" placeholder="Required" required />
+              </label>
+              <label for="last-name">
+                Last Name <input id="last-name" name="last-name" type="text" placeholder="Required" required />
+              </label>
+              <label for="company">
+                Company <input id="company" name="company" type="text" />
+              </label>
+              <label for="title">
+                Title <input id="title" name="title" type="text" />
+              </label>
+              <label for="phone">
+                Phone <input id="phone" name="phone" type="tel" />
+              </label>
+              <label for="email">
+                Email <input id="email" name="email" type="email" placeholder="Required" required />
+              </label>
+              <button id="avatar-submit-btn" class="btn">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- AVATAR K0NCT CONTACT SECTION END-->
+
     </div>
     <script src="js/scripts.js"></script>
   </body>

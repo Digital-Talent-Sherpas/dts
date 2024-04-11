@@ -46,7 +46,8 @@ if (!empty($_POST)) {
         try {
             // Configure the PHPMailer instance
             //Enable SMTP debugging
-            $mail->SMTPDebug = 3;
+            //$mail->SMTPDebug = 3;
+            $mail->SMTPDebug = 0;
             //Set PHPMailer to use SMTP
             $mail->isSMTP();
             //Set SMTP host name
