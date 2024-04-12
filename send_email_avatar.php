@@ -76,6 +76,8 @@ if (!empty($_POST)) {
             // Send the message
             $mail->send () ;
             $successMessage = "<p style='color: green; '>Thank you for contacting us :)</p>";
+            header("Location: http://www.digitaltalentsherpas99.com", true, 301);
+            exit();
         } catch (Exception $e) {
             $errorMessage = "<p style='color: red; '>Something went wrong. Please try again later</p>";
             echo $errorMessage;
