@@ -27,7 +27,7 @@ observer.observe(document.querySelector(".view-work-text"));
 
 /***** Pop Up Contact Window *****/
 
-/***** Register Buttons *****/
+/***** Register Form Buttons *****/
 const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementById("btn3");
@@ -39,9 +39,9 @@ const avatarSubmitBtn = document.getElementById("avatar-submit-btn");
 
 function loadContactPopUp() {
   const popupOverlay = document.getElementById("popupOverlay");
-  const popup = document.getElementById("popup");
+  //const popup = document.getElementById("popup");
   const closePopup = document.getElementById("closePopup");
-  const emailInput = document.getElementById("emailInput");
+  //const emailInput = document.getElementById("emailInput");
 
   // Function to open the popup
   function openPopup() {
@@ -79,19 +79,21 @@ function loadContactPopUp() {
 }
 
 function loadContactPopUpAvatar() {
-  const popupOverlay = document.getElementById("popupOverlay-avatar");
-  const popup = document.getElementById("popup");
-  const closePopup = document.getElementById("closePopup");
-  const emailInput = document.getElementById("emailInput");
+  const popupOverlayAvatar = document.getElementById("popupOverlay-avatar");
+  //const popup = document.getElementById("popup");
+  const closePopupAvatar = document.getElementById("closePopup-avatar");
+  //const emailInput = document.getElementById("emailInput");
 
   // Function to open the popup
-  function openPopup() {
-    popupOverlay.style.display = "block";
+  function openPopupAvatar() {
+    console.log("openPopup called...");
+    popupOverlayAvatar.style.display = "block";
   }
 
   // Function to close the popup
-  function closePopupFunc() {
-    popupOverlay.style.display = "none";
+  function closePopupFuncAvatar() {
+    console.log("closePopupFunc called...");
+    popupOverlayAvatar.style.display = "none";
   }
 
   // Function to submit the signup form
@@ -106,15 +108,15 @@ function loadContactPopUpAvatar() {
   // Event listeners
 
   // Trigger the popup to open (you can call this function on a button click or any other event)
-  openPopup();
+  openPopupAvatar();
 
   // Close the popup when the close button is clicked
-  closePopup.addEventListener("click", closePopupFunc);
+  closePopupAvatar.addEventListener("click", closePopupFuncAvatar);
 
   // Close the popup when clicking outside the popup content
-  popupOverlay.addEventListener("click", function (event) {
-    if (event.target === popupOverlay) {
-      closePopupFunc();
+  popupOverlayAvatar.addEventListener("click", function (event) {
+    if (event.target === popupOverlayAvatar) {
+      closePopupFuncAvatar();
     }
   });
 }
