@@ -56,7 +56,7 @@ if (!empty($_POST)) {
             $mail->SMTPAuth = true;
             //Provide username and password
             $mail->Username = "no-reply@digitaltalentsherpas99.com";
-            $mail->Password = "DTS99nmr4m!";
+            $mail->Password = "";
             //If SMTP requires TLS encryption then set it
             $mail->SMTPSecure = "tls";
             //Needed to connect to port 465
